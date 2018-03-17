@@ -1,3 +1,3 @@
-<p>
-  <router-link to="answers">{{ message }}</router-link>
-</p>
+<div class="questions">
+  <Question v-for="(question, index) in questions" :key="question.id" :question="question" :index="index" />
+</div>

@@ -1,8 +1,12 @@
+import { mapGetters } from 'vuex'
+import Question from '@/components/common/question'
+
 export default {
   name: 'Questions',
-  data () {
-    return {
-      message: 'Questions'
-    }
+  computed: mapGetters([
+    'questions'
+  ]),
+  components: {
+    Question
   }
 }
