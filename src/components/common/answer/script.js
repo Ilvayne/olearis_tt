@@ -1,4 +1,4 @@
 export default {
   name: 'Answer',
-  props: ['answer']
+  props: ['answer', 'index', 'questionIndex']
 }

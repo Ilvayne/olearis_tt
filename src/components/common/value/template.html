@@ -1,0 +1,8 @@
+<div class="value">
+  <template v-if="type === 'radio'">
+    <input type="radio" v-model="currentValue" @keyup="changeQuestion">
+  </template>
+  <template v-else>
+    <option>{{ currentValue }}</option>
+  </template>
+</div>

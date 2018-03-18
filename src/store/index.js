@@ -7,8 +7,27 @@ import getters from './getters'
 Vue.use(Vuex)
 
 const state = {
-  questions: ['one', 'two', 'three'],
-  answers: ['answer 1', 'answer 2', 'answer 3']
+  questions: [
+    {
+      text: 'Question 1',
+      type: 'text',
+      answers: [
+        'answer1'
+      ]
+    },
+    {
+      text: 'Question 2',
+      type: 'radio',
+      values: [],
+      answers: []
+    },
+    {
+      text: 'Question 3',
+      type: 'select',
+      values: [],
+      answers: []
+    }
+  ]
 }
 
 export default new Vuex.Store({
